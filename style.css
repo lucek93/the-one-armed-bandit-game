@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    color: #252526;
+
+}
+
+.wrap {
+    width: 80%;
+    margin: 5vh auto 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+
+}
+
+/* 
+#F2F2F2
+#BFBCAA
+#8C877D */
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.burger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    transition: .3s linear;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+aside {
+    position: absolute;
+    border: 2px solid black;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: #F27244;
+    /* background-color: #F2F2F2; */
+    transition: .5s linear;
+}
+
+ul {
+    background-color: #F27244;
+}
+
+li {
+    background-color: #F27244;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #F2B705;
+    border: 2px solid black;
+    width: 90%;
+    margin: 5px auto;
+}
+
+.fas {
+    display: none;
+}
+
+i.show {
+    display: block;
+}
+
+aside.show {
+    left: 0;
+}
+
+.game {
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.game div {
+    height: 30vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid gray;
+}
+
+.play {
+    text-align: center;
+}
+
+.play input {
+    height: 90px;
+    font-size: 40px;
+    padding: 20px;
+    width: 400px;
+    border: 3px solid #252526;
+    text-align: center;
+}
+
+.play button {
+    width: 40%;
+    height: 90px;
+    text-align: center;
+    padding: 20px 60px;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: #252526;
+    border: none;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 6px;
+}
+
+.panel {
+    margin: 80px 0 40px;
+    font-size: 26px;
+}
+
+.panel,
+.score {
+    font-size: 26px;
+}
+
+.panel span,
+.score span {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .play input {
+        height: 70px;
+        font-size: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .play button {
+        height: 74px;
+        font-size: 30px;
+        display: block;
+    }
+}

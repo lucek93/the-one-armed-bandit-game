@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The One-Armed Bandit</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e42ef226d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>The One-Armed Bandit</h1>
+
+        <div class="burger">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="history.html">History of Games</a></li>
+                    <li><a href="#">Score</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="game">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </section>
+
+        <section class="play">
+            <input type="number" placeholder="Input bid" id="bid">
+            <button class="start">Play!</button>
+        </section>
+
+        <section class="panel">Your funds before the next game: <span class="wallet"></span></section>
+        <section class="score">
+            <span class="result"></span> Played <span class="number"></span> games, including <span class="win"></span>
+            wins and <span class="loss"></span> losses.
+        </section>
+    </div>
+    <script src="auxiliary.js"></script>
+    <script src="Wallet.js"></script>
+    <script src="Statistics.js"></script>
+    <script src="Draw.js"></script>
+    <script src="Result.js"></script>
+    <script src="Game.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
